@@ -1,381 +1,629 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>reveal.js</title>
 
-	<title>reveal.js</title>
+    <link rel="stylesheet" href="dist/reset.css" />
+    <link rel="stylesheet" href="dist/reveal.css" />
+    <link rel="stylesheet" href="dist/theme/night.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="stylesheet" href="plugin/appearance/appearance.css" />
+    <!-- Theme used for syntax highlighted code -->
+    <link rel="stylesheet" href="plugin/highlight/monokai.css" />
+    <style>
+      .decoration {
+        content: "";
+        position: absolute;
+        height: 2px;
+        width: 20%;
+        background-color: white;
+        bottom: 0px;
+        left: 40%;
+      }
 
-	<link rel="stylesheet" href="dist/reset.css">
-	<link rel="stylesheet" href="dist/reveal.css">
-	<link rel="stylesheet" href="dist/theme/night.css">
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-	<link rel="stylesheet" href="plugin/appearance/appearance.css">
-	<!-- Theme used for syntax highlighted code -->
-	<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	<style>
-		.decoration {
-			content: "";
-			position: absolute;
-			height: 2px;
-			width: 20%;
-			background-color: white;
-			bottom: 0px;
-			left: 40%;
-		}
+      strong {
+        color: #d29d4b;
+        font-weight: normal !important;
+      }
+    </style>
+  </head>
 
-		strong {
-			color: #d29d4b;
-			font-weight: normal !important;
-		}
-	</style>
-</head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <div style="display: flex; align-items: center">
+            <div style="width: 28%">
+              <img
+                class="animated shrinkInBlur"
+                src="./img/logo.png"
+                alt="Freire Logo"
+              />
+            </div>
+            <div style="margin-left: 32px">
+              <h1
+                style="
+                  letter-spacing: 10px;
+                  font-weight: 200;
+                  text-align: left;
+                  line-height: 96px;
+                  font-size: 158px;
+                "
+              >
+                FREIRE
+              </h1>
+              <h6 style="text-align: left; margin-left: 16px">
+                Plataforma para el conocimiento
+              </h6>
+            </div>
+          </div>
+        </section>
+        <section>
+          <section>
+            <h2>La problemática</h2>
+            <span class="decoration animated fadeInRight faster"></span>
+          </section>
+          <section>
+            <h3>Limitaciones en acceso a canales de información</h3>
+            <img
+              style="height: 40vh; border-radius: 24px"
+              src="./img/sin_internet.webp"
+              alt="Sin internet"
+            />
+          </section>
+          <section>
+            <h3>Parcialidad en las herramientas de busqueda</h3>
+            <img
+              src="./img/Google-Monopoly-800x450.png"
+              alt="Google Monopoly"
+            />
+          </section>
+          <section>
+            <h3>Desconocimiento de fuentes fiables y de calidad</h3>
+            <img
+              style="border-radius: 24px"
+              src="./img/flatearth.png"
+              alt="Flatearth"
+            />
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2 style="text-align: center">
+              <span style="margin-right: 20px">¿Qué es</span> <br />
+              <span style="letter-spacing: 12px; margin-left: 20px">FREIRE</span
+              >?
+            </h2>
+            <span class="decoration animated fadeInRight faster"></span>
+          </section>
+          <section>
+            <p>
+              <span style="letter-spacing: 6px">FREIRE </span> es una
+              <strong> aplicación multiplataformas </strong>
+              para la distribución de contenidos multimedia de manera
+              estructurada, cómoda, eficaz y pensada para poder garantizar el
+              acceso a la información
+              <strong> sin conexión al internet. </strong>
+            </p>
+          </section>
+          <section>
+            <p>
+              Con soporte para materiales en
+              <strong> múltiples formatos </strong>
+              (pdf, epub y mp4),
+              <span style="letter-spacing: 4px">FREIRE</span> brinda a los
+              usuarios acceso a una biblioteca de contenidos digitales desde
+              cualquier dispositivo, con facilidades para el uso local de los
+              recursos.
+            </p>
+          </section>
+          <section>
+            <p>
+              Proveyendo además una <strong>estructura</strong> para planes de
+              estudios, organizada en tres niveles de especificidad.
+            </p>
+            <ol>
+              <li class="animated fadeInRight">Programa académico (Pensum)</li>
+              <li
+                class="animated fadeInRight"
+                style="margin-left: 4rem; margin-top: 1rem"
+              >
+                Unidad académica (Materias)
+              </li>
+              <li
+                class="animated fadeInRight"
+                style="margin-left: 8rem; margin-top: 1rem"
+              >
+                Objetivos específicos (Temas)
+              </li>
+            </ol>
+          </section>
+          <section style="position: relative">
+            <div
+              style="
+                position: absolute;
+                left: 50%;
+                top: 50%;
+                transform: translate(-50%, -50%);
+                width: 100vw;
+                height: 100vh;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+              "
+            >
+              <iframe
+                data-src="https://freire.web.app/"
+                frameborder="0"
+                style="height: 90%; width: 90%"
+              >
+              </iframe>
+            </div>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Aplicabilidad</h2>
+            <span class="decoration animated fadeInRight faster"></span>
+          </section>
+          <section>
+            Se espera que la plataforma funcione como
+            <strong>
+              centro de documentación, catalogación y almacenaje
+            </strong>
+            de los contenidos digitales que se consideren importantes para la
+            Nación.
+          </section>
+          <section>
+            <h3>En la educación</h3>
+            <h4>Garantía de acceso a material de estudio de calidad</h4>
+            <img
+              class="animated fadeInDown"
+              src="./img/tricolor.jpg"
+              alt="Cada familia una escuela"
+              style="border-radius: 24px; height: 40vh"
+            />
+            <img
+              class="animated fadeInDown"
+              src="./img/familia.jpg"
+              alt="Cada familia una escuela"
+              style="border-radius: 24px; height: 40vh"
+            />
+            <img
+              class="animated fadeInDown"
+              src="./img/canaima.png"
+              alt="Canaima educativa"
+              style="border-radius: 24px; height: 40vh"
+            />
+          </section>
+          <section>
+            <h3>En la investigación</h3>
+            <h4>Divulgación de fuentes especializadas</h4>
+            <img
+              class="animated fadeInDown"
+              src="./img/biblioteca.jpg"
+              alt="Biblioteca Simón Bolivar"
+              style="border-radius: 24px; height: 30vh"
+            />
+            <img
+              class="animated fadeInDown"
+              src="./img/infocentro.jpg"
+              alt="Infocentro"
+              style="border-radius: 24px; height: 30vh"
+            />
+          </section>
+          <section>
+            <h3>En la cultura</h3>
+            <h4>Difusión de la produccón cultural</h4>
+            <img
+              class="animated fadeInDown"
+              src="./img/ayacucho2.png"
+              alt="Biblioteca ayacucho"
+              style="border-radius: 24px; height: 40vh"
+            />
+            <img
+              class="animated fadeInDown"
+              src="./img/chaplin.jpg"
+              alt="Charles Chaplin"
+              style="border-radius: 24px; height: 40vh"
+            />
+          </section>
+          <section>
+            <h3>Posibilidades a futuro</h3>
+            <ul>
+              <li class="animated fadeInRight">Integración con Moodle</li>
+              <li class="animated fadeInRight">Autoevaluación</li>
+              <li class="animated fadeInRight">Aprendizaje de idiomas</li>
+              <li class="animated fadeInRight">Calendarios para eventos</li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Características técnicas</h2>
+            <span class="decoration animated fadeInRight faster"></span>
+          </section>
+          <section>
+            <p>
+              La aplicación fue realizada utilizando
+              <a
+                href="https://flutter.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Flutter</a
+              >
+              el framework multiplataformas de Google, en el lenguaje
+              <a
+                href="http://dart.dev"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Dart</a
+              >.
+            </p>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+              "
+            >
+              <img
+                class="animated fadeInDown"
+                style="width: 35%"
+                src="./img/dart.png"
+                alt="Dart"
+              />
+              <img
+                class="animated fadeInDown"
+                style="width: 35%"
+                src="./img/flutter.png"
+                alt="Flutter"
+              />
+            </div>
+          </section>
+          <section>
+            <p>
+              Para la persistencia de datos se usa el sistema de archivos junto
+              con una base de datos
+              <a
+                href="http://www.sqlite.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                >SQLite</a
+              >.
+            </p>
+            <img
+              class="animated fadeInDown"
+              style="width: 35%"
+              src="./img/sqlite.png"
+              alt="Sqlite"
+            />
+          </section>
+          <section>
+            <p>
+              El sistema de búsqueda está realizado en Rust utilizando la
+              librería Tantivy, haciendo de interfaz de funciones foráneas de
+              Dart para comunicarse.
+            </p>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+              "
+            >
+              <img
+                class="animated fadeInDown"
+                style="width: 25%"
+                src="./img/rust.png"
+                alt="Rust"
+              />
+              <img
+                class="animated fadeInDown"
+                style="width: 25%"
+                src="./img/tantivy.png"
+                alt="Tantivy"
+              />
+            </div>
+          </section>
+          <section>
+            <p>
+              El Backend de la aplicación utiliza
+              <a
+                href="http://parseplatform.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Parse Server</a
+              >
+              y las analíticas corren sobre
+              <a
+                href="http://matomo.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Matomo</a
+              >, todo sobre contenedores
+              <a
+                href="http://docker.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Docker</a
+              >
+            </p>
+            <div
+              style="
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+              "
+            >
+              <img
+                class="animated fadeInDown"
+                style="width: 25%"
+                src="./img/parse.svg"
+                alt="Parse"
+              />
+              <img
+                class="animated fadeInDown"
+                style="width: 25%; height: auto"
+                src="./img/matomo.svg"
+                alt="Matomo"
+              />
+              <img
+                class="animated fadeInDown"
+                style="width: 25%"
+                src="./img/docker.png"
+                alt="Docker"
+              />
+            </div>
+          </section>
+        </section>
 
-<body>
-	<div class="reveal">
-		<div class="slides">
-			<section>
-				<div style="display: flex; align-items: center;">
-					<div style="width: 28%;">
-						<img class="animated shrinkInBlur " src="./img/logo.png" alt="Freire Logo">
-					</div>
-					<div style="margin-left: 32px;">
-						<h1
-							style="letter-spacing: 10px; font-weight: 200; text-align: left; line-height:96px; font-size: 158px;">
-							FREIRE</h1>
-						<h6 style="text-align: left; margin-left: 16px;">Plataforma para
-							el conocimiento</h6>
-					</div>
-				</div>
-			</section>
-			<section>
-				<section>
-					<h2>La problemática</h2>
-					<span class="decoration animated fadeInRight faster"></span>
-				</section>
-				<section>
-					<h4>Limitaciones en acceso a canales de información</h4>
-					<img style="height: 40vh;" src="./img/sin_internet.webp" alt="Sin internet">
-				</section>
-				<section>
-					<h4>Parcialidad en las herramientas de busqueda</h4>
-					<img src="./img/Google-Monopoly-800x450.png" alt="Google Monopoly">
-				</section>
-				<section>
-					<h4>Desconocimiento de fuentes fiables y de calidad</h4>
-					<img src="./img/flatearth.png" alt="Flatearth">
-				</section>
-			</section>
-			<section>
-				<section>
-					<h2 style="text-align: center;"><span style="margin-right: 20px;">¿Que es</span> <br> <span
-							style="letter-spacing: 12px; margin-left: 20px;">FREIRE</span>?</h2>
-					<span class="decoration animated fadeInRight faster"></span>
+        <section>
+          <section>
+            <h2>Requerimientos de la plataforma</h2>
+            <span class="decoration animated fadeInRight faster"></span>
+          </section>
+          <section>
+            <h3>Requerimientos mínimos de la aplicación</h3>
+            <ul style="columns: 2">
+              <li class="animated fadeInRight">Android: API 31 (10)</li>
+              <li class="animated fadeInRight">IOs: 11</li>
+              <li class="animated fadeInRight">Windows: 10</li>
+              <li class="animated fadeInRight">Linux: Debian 10</li>
+              <li class="animated fadeInRight">MacOs: El Capitan</li>
+              <li class="animated fadeInRight">Firefox: 72.0</li>
+              <li class="animated fadeInRight">Chrome: 84.0</li>
+              <li class="animated fadeInRight">Safari: El Capitan</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Requerimientos del servidor</h3>
+            <p>
+              Recomendamos el uso de al menos <strong>2 servidores</strong>, uno
+              para ParseServer y otro para las analíticas (Matomo). Los
+              requerimientos de espacio depende de cómo se decida almacenar los
+              archivos, considerando que los videos pueden ser lo más pesado (si
+              se almacena además en múltiples calidades).
+            </p>
+          </section>
+          <section>
+            <p>
+              Matomo
+              <a
+                href="https://matomo.org/faq/on-premise/matomo-requirements/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >recomienda</a
+              >
+              como mínimo un servidor con 2 CPU, 2GB RAM y 50 SSD, capacidades
+              suficientes para manejar 100 000 sesiones de la aplicación al mes,
+              pero estas
+              <strong>capacidades deben ser monitorizadas </strong> y los
+              equipos actualizados de forma acorde.
+            </p>
+          </section>
+          <section>
+            <h3>Servicio de videos</h3>
+            <p>
+              La descarga de videos se hace desde YouTube, utilizando la
+              librería
+              <a
+                target="_blank"
+                href="https://pub.dev/packages/youtube_explode_dart"
+                >YoutubeExplode</a
+              >, esta librería hace uso de los servicios de Google, pero no está
+              mantenida por ellos y por tanto
+              <strong>
+                no se puede garantizar su estabilidad ni funcionalidad</strong
+              >.
+            </p>
+          </section>
+          <section>
+            <h3>Búsqueda en la versión web</h3>
+            <p>
+              La versión de WEB requiere de un
+              <strong> servidor de búsqueda aparte</strong> para poder realizar
+              búsquedas de texto sobre los recurso.
+            </p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Estado del desarrollo</h2>
+            <span class="decoration animated fadeInRight faster"></span>
+          </section>
+          <section>
+            <p>
+              Actualmente la plataforma se encuentra en un
+              <strong> estado avanzado de desarrollo</strong>, en las versiones
+              de Linux, Android y Web.
+            </p>
+          </section>
 
-				</section>
-				<section>
-					<p>
-						FREIRE es una
-						<strong>
-							aplicación multiplataformas
-						</strong>
-						para la distribución de contenidos multimedia
-						de manera estructurada, cómoda, eficaz y pensada
-						para poder garantizar el acceso a la información
-						<strong>
-							sin conexión al internet.
-						</strong>
-					</p>
-				</section>
-				<section>
-					<p>
-						Con soporte para materiales en
-						<strong>
-							múltiples formatos
-						</strong>
-						(pdf, epub y mp4), <span style="letter-spacing: 4px">FREIRE</span> brinda a los
-						usuarios acceso a una biblioteca de contenidos digitales desde
-						cualquier dispositivo, con facilidades para el uso local de los
-						recursos.
-					</p>
-				</section>
-				<section>
-					<p>
-						Proveyendo además una <strong>estructura</strong> para planes de estudios,
-						organizada en tres niveles de especificidad.
-					</p>
-					<ol>
-						<li class="animated fadeInRight">Programa académico (Pensum)</li>
-						<li class="animated fadeInRight" style="margin-left: 4rem; margin-top: 1rem;">Unidad académica
-							(Materias)</li>
-						<li class="animated fadeInRight" style="margin-left: 8rem; margin-top: 1rem;">Objetivos
-							específicos (Temas)</li>
-					</ol>
-				</section>
-				<section style="position: relative;">
-					<div
-						style="position: absolute; left: 50%; top: 50%; transform: translate(-50%,-50%); width: 100vw; height: 100vh; display: flex; align-items: center; justify-content: center;">
-						<iframe data-src="https://freire.web.app/" frameborder="0" style="height: 90%; width: 90%;">
-						</iframe>
-					</div>
-				</section>
-			</section>
-			<section>
-				<section>
-					<h2>
-						Aplicaciones
+          <section>
+            <h3>Completado</h3>
+            <ul style="columns: 2">
+              <li class="animated fadeInRight">Internacionalización</li>
+              <li class="animated fadeInRight">Estructura organizativa</li>
+              <li class="animated fadeInRight">Sistema de filtrado</li>
+              <li class="animated fadeInRight">Interfaz gráfica básica</li>
+              <li class="animated fadeInRight">Control de acceso</li>
+              <li class="animated fadeInRight">Manejo de PDF, Epub, Video</li>
+              <li class="animated fadeInRight">Persistencia de datos</li>
+            </ul>
+          </section>
+          <section>
+            <h3>En proceso</h3>
+            <ul>
+              <li class="animated fadeInRight">
+                Manejo de listas de reproducción y colecciones
+              </li>
+              <li class="animated fadeInRight">Motor de búsqueda</li>
+              <li class="animated fadeInRight">
+                Sistema de gestión de contenidos
+              </li>
+              <li class="animated fadeInRight">Arreglos en generales</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Próximos pasos</h3>
+            <ul>
+              <li class="animated fadeInRight">Roles y usuarios</li>
+              <li class="animated fadeInRight">Seguridad del servidor</li>
+              <li class="animated fadeInRight">Actualizaciones sin conexión</li>
+              <li class="animated fadeInRight">
+                Interfaz gráfica personalizada
+              </li>
+              <li class="animated fadeInRight">
+                Desarrollo para Windows, IOs y MacOs
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Oferta</h2>
+            <span class="decoration animated fadeInRight faster"></span>
+          </section>
+          <section>
+            <h3>Aplicaciones</h3>
+            <ul>
+              <li>Página de llegada del proyecto.</li>
+              <li>
+                Aplicación adaptada y funcional para:
+                <ul style="columns: 2">
+                  <li>Linux (Debian 10)</li>
+                  <li>Windows 10</li>
+                  <li>IOs 11</li>
+                  <li>MacOs El Capitan</li>
+                  <li>Android 10</li>
+                  <li>Web (navegadores con soporte para service workers)</li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Documentos y manuales</h3>
+            <ul>
+              <li>Documentación técnica de la aplicación</li>
+              <li>Memoria descriptiva del diseño de la aplicación</li>
+              <li>Manual de usuario de la aplicación</li>
+            </ul>
+          </section>
+          <section>
+            <h3>Código</h3>
+            <ul>
+              <li>
+                Publicación del código fuente de la página de la aplicación en
+                el dominio público
+              </li>
+              <li>
+                Publicación del código fuente de
+                <span style="letter-spacing: 6px">FREIRE</span> en el dominio
+                público
+              </li>
+              <li>
+                Publicación del código fuente de la aplicación adaptada en el
+                dominio público
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h3>Servicios</h3>
+            <ul style="margin-bottom: 32px">
+              <li>Diseño interfaz gráfica de la aplicación</li>
+              <li>Apoyo técnico en el despliegue de la aplicación</li>
+              <li>
+                Apoyo técnico para lanzamiento de la aplicación (publicación en
+                iStore, Google Play, etc)
+              </li>
+              <li>Mantenimiento y seguimiento de la aplicación*</li>
+              <li>
+                Formación del personal en el desarrollo y manejo de la
+                aplicación*
+              </li>
+            </ul>
+            <div style="text-align: right">
+              <em style="text-align: right; font-size: 18pt"
+                >* Por 6 meses siguientes al despliegue</em
+              >
+            </div>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h2>Requerimientos para el desarrollo</h2>
+            <span class="decoration animated fadeInRight faster"></span>
+          </section>
+          <section>
+            <h3>Tiempos</h3>
+            <p>
+              El proyecto tiene una duración estimada de <br />
+              <strong>10 semanas</strong>.
+            </p>
+          </section>
+          <section>
+            <h3>Recursos</h3>
+            <p>
+              La ejecución del proyecto
+              <strong> costaría un estimado 70&nbsp;000$ </strong> para gastos
+              de personal, desarrollo técnico y grafico, equipos y diseño
+              instruccional, y los derechos de uso del software.
+            </p>
+          </section>
+        </section>
+      </div>
+    </div>
+    <!--  -->
+    <script src="dist/reveal.js"></script>
+    <!-- Appareance Plugin -->
+    <script src="plugin/appearance/appearance.js"></script>
+    <script>
+      Reveal.initialize({
+        hash: true,
+        appearance: {
+          baseclass: "animated",
+          visibleclass: "in",
+          hideagain: true,
+          delay: 300,
+          appearevent: "slidetransitionend",
+          autoappear: false,
+          autoelements: false,
+        },
+        plugins: [Appearance],
+      });
+    </script>
 
-					</h2>
-					<span class="decoration animated fadeInRight faster"></span>
-
-				</section>
-				<section>
-					<h4>
-						En la educación
-					</h4>
-				</section>
-				<section>
-					<h4>
-						En la investigación
-					</h4>
-				</section>
-				<section>
-					<h4>
-						En la cultura
-					</h4>
-				</section>
-				<section>
-					<h4>
-						Para el Estado
-					</h4>
-				</section>
-				<section>
-					<h4>
-						Posibilidades a futuro
-					</h4>
-				</section>
-			</section>
-			<section>
-				<section>
-					<h2>
-						Características técnicas
-					</h2>
-					<span class="decoration animated fadeInRight faster"></span>
-
-				</section>
-				<section>
-					<p>
-						La aplicación fue realizada utilizando <a href="https://flutter.dev" target="_blank"
-							rel="noopener noreferrer">Flutter</a> el framework
-						multiplataformas de Google, en el lenguaje <a href="http://dart.dev" target="_blank"
-							rel="noopener noreferrer">Dart</a>.
-					</p>
-					<div style="display: flex; align-items: center; justify-content: space-evenly;">
-						<img class="animated fadeInDown" style="width: 35%;" src="./img/dart.png" alt="Dart">
-						<img class="animated fadeInDown" style="width: 35%;" src="./img/flutter.png" alt="Flutter">
-					</div>
-				</section>
-				<section>
-					<p>
-						Para la persistencia de datos se usa el sistema de archivos junto con una base de datos
-						<a href="http://www.sqlite.org" target="_blank" rel="noopener noreferrer">SQLite</a>.
-					</p>
-					<img class="animated fadeInDown" style="width: 35%;" src="./img/sqlite.png" alt="Sqlite">
-				</section>
-				<section>
-					<p>
-						El sistema de busqueda esta realizado en Rust utilizando la libreria Tantivy, haciendo de
-						interfaz de funciones foráneas de Dart para
-						comunicarse.
-					</p>
-					<div style="display: flex; align-items: center; justify-content: space-around;">
-						<img class="animated fadeInDown" style="width: 25%;" src="./img/rust.png" alt="Rust" />
-						<img class="animated fadeInDown" style="width: 25%;" src="./img/tantivy.png" alt="Tantivy" />
-					</div>
-				</section>
-				<section>
-					<p>El Backend de la aplicación utiliza <a href="http://parseplatform.org" target="_blank"
-							rel="noopener noreferrer">Parse Server</a>
-						y las analiticas corren sobre <a href="http://matomo.org" target="_blank"
-							rel="noopener noreferrer">Matomo</a>, todo
-						sobre contenedores
-						<a href="http://docker.com" target="_blank" rel="noopener noreferrer">Docker</a>
-
-					</p>
-					<div style="display: flex; align-items: center; justify-content: space-around;">
-						<img class="animated fadeInDown" style="width: 25%;" src="./img/parse.svg" alt="Parse" />
-						<img class="animated fadeInDown" style="width: 25%; height: auto;" src="./img/matomo.svg"
-							alt="Matomo" />
-						<img class="animated fadeInDown" style="width: 25%;" src="./img/docker.png" alt="Docker" />
-					</div>
-				</section>
-			</section>
-
-			<section>
-				<section>
-					<h2>
-						Requerimientos de la plataforma
-					</h2>
-					<span class="decoration animated fadeInRight faster"></span>
-
-				</section>
-				<section>
-					<h3>Requerimientos minimos de la aplicación</h3>
-					<ul style="columns: 2;">
-						<li class="animated fadeInRight">Android: API 31 (10)</li>
-						<li class="animated fadeInRight">IOs: 11</li>
-						<li class="animated fadeInRight">Windows: 10</li>
-						<li class="animated fadeInRight">Linux: Debian 10</li>
-						<li class="animated fadeInRight">MacOs: El Capitan</li>
-						<li class="animated fadeInRight">Firefox: 72.0</li>
-						<li class="animated fadeInRight">Chrome: 84.0</li>
-						<li class="animated fadeInRight">Safari: El Capitan</li>
-
-					</ul>
-				</section>
-				<section>
-					<h3>Requerimientos del servidor</h3>
-					<p>
-						Recomendamos el uso de por lo menos 2 servidores, uno para ParseServer y otro para las
-						analiticas (Matomo). Los requerimientos de espacio son muy dependientes de como se decidan
-						almacenar los archivos, considerando que los videos puede ser lo mas pesado (si se almacena
-						ademas en multiples calidades).
-					</p>
-				</section>
-				<section>
-					<p>
-						Matomo <a href="https://matomo.org/faq/on-premise/matomo-requirements/" target="_blank"
-							rel="noopener noreferrer">recomienda</a> como minimo un servidor con 2 CPU, 2GB RAM y 50
-						SSD, capacidades suficientes para manejar 100 000 sesiones de la aplicación al mes, pero estas
-						capacidades deben ser monitorizadas y los equipos actualizados de forma acorde.
-					</p>
-				</section>
-				<section>
-					<h3>Servicio de videos</h3>
-					<p>La descarga de videos se hace desde YouTube, utilizando la libreria <a target="_blank"
-							href="https://pub.dev/packages/youtube_explode_dart">YoutubeExplode</a>, esta libreria hace
-						uso de los servicios de Google pero no esta mantenida por ellos y por tanto no se puede
-						garantizar su estabilidad ni funcionalidad</p>
-				</section>
-				<section>
-					<h3>Busqueda en la versión web</h3>
-					<p>La versión de WEB requiere de un servidor de busqueda aparte para poder realizar busquedas de
-						texto sobre los recurso</p>
-				</section>
-			</section>
-			<section>
-				<section>
-					<h2>Estado del desarrollo</h2>
-					<span class="decoration animated fadeInRight faster"></span>
-
-				</section>
-				<section>
-					<p>Actualmente la plataforma se encuentra en un estado avanzado de desarrollo, principalmente las
-						versiones de Linux, Android y Web.</p>
-				</section>
-				<section>
-					<h3>Por terminar</h3>
-					<ul>
-						<li>Interfaz gráfica personalizada</li>
-						<li>Roles y usuarios</li>
-						<li>Busqueda de texto completo</li>
-						<li>Sistema de gestion de contenidos</li>
-						<li>Bugs generales</li>
-					</ul>
-				</section>
-			</section>
-			<section>
-				<section>
-					<h2>Oferta</h2>
-					<span class="decoration animated fadeInRight faster"></span>
-
-				</section>
-				<section>
-					<h3>Aplicaciones</h3>
-					<ul>
-						<li>Página de llegada del proyecto.</li>
-						<li>
-
-							Aplicación adaptada y funcional para:
-							<ul style="columns: 2;">
-								<li>Linux (Debian 10)</li>
-								<li>Windows 10</li>
-								<li>IOs 11</li>
-								<li>MacOs El Capitan</li>
-								<li>Android 10</li>
-								<li>Web (navegadores con soporte para service workers)</li>
-							</ul>
-						</li>
-					</ul>
-				</section>
-				<section>
-					<h3>Documentos y manuales</h3>
-					<ul>
-						<li>Documentación técnica de la aplicación</li>
-						<li>Manuál de usuario de la aplicación</li>
-						<li>Manuál de diseño de la aplicación</li>
-					</ul>
-				</section>
-				<section>
-					<h3>Código</h3>
-					<ul>
-						<li>Publicación del código fuente de la pagina de la aplicación en el dominio público</li>
-						<li>Publicación del código fuente de FREIRE en el dominio público</li>
-						<li>Publicación del código fuente de la aplicación adaptada en el dominio público</li>
-					</ul>
-				</section>
-				<section>
-					<h3>Servicios</h3>
-					<ul>
-						<li>Diseño de la aplicación</li>
-						<li>Apoyo técnico en el despliegue de la aplicación</li>
-						<li>Apoyo técnico para lanzamiento de la apliacación (Publicación en iStore, GooglePlay, etc)
-						</li>
-						<li>Mantenimiento y seguimiento de la aplicación por 6 meses siguientes al despliegue</li>
-						<li>Formación del personal en el desarrollo y manejo de la aplicación</li>
-					</ul>
-				</section>
-			</section>
-			<section>
-				<section>
-					<h2>
-						Requerimientos para el desarrollo
-					</h2>
-					<span class="decoration animated fadeInRight faster"></span>
-
-				</section>
-				<section>
-					<h3>Diagrama de Gatt (Tentativo)</h3>
-				</section>
-				<section>
-					<h3>Recursos</h3>
-					<p>La ejecución del proyecto costaria 70 000$</p>
-				</section>
-			</section>
-		</div>
-	</div>
-	<!--  -->
-	<script src="dist/reveal.js"></script>
-	<!-- Appareance Plugin -->
-	<script src="plugin/appearance/appearance.js"></script>
-	<script>
-		Reveal.initialize({
-			hash: true,
-			appearance: {
-				baseclass: 'animated',
-				visibleclass: 'in',
-				hideagain: true,
-				delay: 300,
-				appearevent: 'slidetransitionend',
-				autoappear: false,
-				autoelements: false
-			},
-			plugins: [Appearance]
-		});
-	</script>
-
-	<!-- <script src="plugin/notes/notes.js"></script>
+    <!-- <script src="plugin/notes/notes.js"></script>
 	<script src="plugin/markdown/markdown.js"></script>
 	<script src="plugin/highlight/highlight.js"></script>
 	<script>
@@ -389,6 +637,5 @@
 			plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
 		});
 	</script> -->
-</body>
-
+  </body>
 </html>
